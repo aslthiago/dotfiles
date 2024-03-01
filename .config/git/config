@@ -1,0 +1,6 @@
+[user]
+	name = Thiago Lopes
+	email = aslthiago@gmail.com
+	signingkey = 80ED81FBDC20882F
+[init]
+	defaultBranch = master
