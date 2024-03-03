@@ -22,34 +22,4 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
   unset f
 fi
 
-# ------------------------------------------------------------------------------
-
-# Set keyboard layout to US
-setxkbmap us
-
-# Enable numlock on startup
-numlockx
-
-# Configure displays: eDP1 (primary), HDMI1 (secondary) off
-xrandr --output eDP1 --auto --output HDMI1 --off
-
-# Enable the compositor for window transparency and effects
-picom -f &
-
-# Adjust the screen's color temperature based on the location
-redshift -l -22.37:-43.16 &
-
-# Automatically hide the mouse cursor after 5 seconds of inactivity
-unclutter --timeout 5 &
-
-# Set the background image using xwallpaper
-xwallpaper --zoom $WALLPAPER/default
-
-# Continuously update root window name every 1 minute
-while true; do
-  xsetroot -name "$(date "+%F %R")"
-  sleep 1m
-done &
-
-# Execute the window manager
-exec dwm
+source "$HOME/.local/lib/user-xinitrc.sh"
