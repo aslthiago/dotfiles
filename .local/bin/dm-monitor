@@ -1,0 +1,13 @@
+#!/bin/sh
+
+source "$HOME/.local/lib/user-xrandr.sh"
+
+monitor_config=$(echo -e "disconnect\nhdmi\nhdmi-left\nhdmi-right\nduplicate" | dmenu -i -p "Monitor Configuration")
+
+if setup_monitor "$monitor_config"; then
+  # Successfully set up monitors
+  notify-send "Multi Monitor" "Monitors configured"
+else
+  # Failed to set up monitors
+  notify-send "Multi Monitor" "Failed to configure monitors"
+fi
