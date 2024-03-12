@@ -4,3 +4,6 @@
 [submodule ".local/src/st"]
 	path = .local/src/st
 	url = git@github.com:aslthiago/st.git
+[submodule ".local/src/dmenu"]
+	path = .local/src/dmenu
+	url = git@github.com:aslthiago/dmenu.git
