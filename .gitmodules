@@ -7,3 +7,6 @@
 [submodule ".local/src/dmenu"]
 	path = .local/src/dmenu
 	url = git@github.com:aslthiago/dmenu.git
+[submodule ".local/src/dwmblocks"]
+	path = .local/src/dwmblocks
+	url = git@github.com:aslthiago/dwmblocks.git
