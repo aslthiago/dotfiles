@@ -10,3 +10,6 @@
 [submodule ".local/src/dwmblocks"]
 	path = .local/src/dwmblocks
 	url = git@github.com:aslthiago/dwmblocks.git
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = git@github.com:aslthiago/nvim.git
