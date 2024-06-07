@@ -1,0 +1,25 @@
+# ~/
+/*
+!/.bash*
+!/.git*
+!/.profile
+!/README*
+
+# ~/.local/
+/.local/*
+!/.local/bin/
+!/.local/etc/
+!/.local/lib/
+!/.local/src/
+!/.local/wallpaper/
+
+# ~/.config/
+/.config/*
+!/.config/X11/
+!/.config/git/
+!/.config/gtk-3.0/
+!/.config/keepassxc/
+!/.config/nvim/
+!/.config/tmux/
+!/.config/user-dirs.dirs
+!/.config/zathura/
